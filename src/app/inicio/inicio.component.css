@@ -1,0 +1,31 @@
+.contenedor{
+  background-image: url("/assets/cursopractico1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.col{
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.imghome {
+  padding: 20px;
+  margin: 20px;
+  margin-right: 60px;
+  border-radius: 75px;
+}
+
+.col1{
+  padding: 15px;
+  margin: 15px;
+  text-size-adjust: 18;
+}
+
+.col2{
+  padding: 15px;
+  margin: 15px;
+  text-size-adjust: 18;
+}
