@@ -1,0 +1,43 @@
+<p>actualiza-conductores works!</p>
+<div class="container">
+  <div class="col" style="text-align:center">
+    <h2>{{title}}</h2>
+  </div>
+  <br/><br/>
+  <form class="form-group row">
+    <div class="form-group col-md-3">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="inputNombre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="cargo">Apellido:</label>
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="inputApellido">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="cedula">Cedula:</label>
+      <input type="text" name="cedula" id="cedula" placeholder="Cedula" class="form-control" [(ngModel)]="inputCedula">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="celular">Celular:</label>
+      <input type="text" name="celular" id="celular" placeholder="Celular" class="form-control" [(ngModel)]="inputCelular">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="cargo">Email:</label>
+      <input type="text" name="email" id="email" placeholder="Email" class="form-control" [(ngModel)]="inputEmail">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="salario">Direccion:</label>
+      <input type="text" name="direccion" id="direccion" placeholder="Direccion" class="form-control" [(ngModel)]="inputDireccion">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="salario">Plan:</label>
+      <input type="text" name="plan" id="plan" placeholder="Plan" class="form-control" [(ngModel)]="inputPlan">
+    </div>
+    <div class="col">
+      <input type="submit" value="actualizar" class="btn btn-primary" (click)="actualizarConductor()"  style="margin: 35px;">
+      <input type="submit" value="eliminar" class="btn btn-primary" (click)="eliminarConductor()"  style="margin: 35px;">
+    </div>
+  </form>
+  {{indice}}
+</div>
+<br><br><br>

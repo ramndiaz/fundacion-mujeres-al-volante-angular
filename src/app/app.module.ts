@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
@@ -14,6 +14,20 @@ import { AulaComponent } from './aula/aula.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
+import { ErrorPersonalizadoComponent } from './error-personalizado/error-personalizado.component';
+import { DataServices } from './data.services';
+import { ConductoresComponent } from './conductores/conductores.component';
+import { FormsModule } from '@angular/forms';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { NoticiasService } from './noticias.service';
+import { UsuariosService } from './usuarios.service';
+import { ConductoresService } from './conductores.service';
+import { ActualizaNoticiasComponent } from './actualiza-noticias/actualiza-noticias.component';
+import { ActualizaConductoresComponent } from './actualiza-conductores/actualiza-conductores.component';
+
 
 @NgModule({
   declarations: [
@@ -27,14 +41,25 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     InicioComponent,
     AulaComponent,
     ServiciosComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    HomeComponent,
+    SigninComponent,
+    SignupComponent,
+    ErrorPersonalizadoComponent,
+    ConductoresComponent,
+    UsuariosComponent,
+    ActualizaNoticiasComponent,
+    ActualizaConductoresComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [DataServices, NoticiasService, UsuariosService, ConductoresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

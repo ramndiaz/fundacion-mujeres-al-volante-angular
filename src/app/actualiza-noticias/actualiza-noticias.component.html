@@ -1,4 +1,4 @@
-<p>noticias works!</p>
+<p>actualiza-noticias works!</p>
 <div class="container">
   <div class="col" style="text-align:center">
     <h2>{{title}}</h2>
@@ -26,23 +26,10 @@
       <input type="text" name="autor" id="autor" placeholder="Autor" class="form-control" [(ngModel)]="inputAutor">
     </div>
     <div class="col">
-      <input type="submit" value="enviar" class="btn btn-primary" (click)="agregarNoticia()"  style="margin: 35px;">
+      <input type="submit" value="actualizar" class="btn btn-primary" (click)="actualizarNoticia()"  style="margin: 35px;">
+      <input type="submit" value="eliminar" class="btn btn-primary" (click)="eliminarNoticia()"  style="margin: 35px;">
     </div>
   </form>
+  {{indice}}
 </div>
 <br><br><br>
-
-<!--
-<app-lista-usuarios *ngFor="let empleado of empleados; let i = index" [empleadoLista]="empleado" [iLista]="i"></app-lista-usuarios>
--->
-
-<div class="container">
-  <div class="col">
-    <div class="row">
-      <div *ngFor="let noticia of noticias; let i = index">
-        {{i+1}} {{noticia.titulo}} {{noticia.imagen}} {{noticia.tema}} {{noticia.noticia}} {{noticia.autor}}
-        <button [routerLink]="['/actualizaNoticias', i]" class="btn btn-primary" >actualizar</button>
-      </div>
-    </div>
-  </div>
-</div>
